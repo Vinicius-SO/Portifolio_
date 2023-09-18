@@ -5,6 +5,18 @@ export default {
   darkMode: ['class'],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    extend:{
+      fontSize:{
+        '3xl': '2rem'
+      },
+      margin:{
+        '160px': '160px'
+      }
+    },
+    colors: {
+      'textColor' : '#69717E',
+      'brandBlue' : '#4A91D3'
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -70,4 +82,5 @@ export default {
     },
   },
   plugins: [tailwindAnimate],
+
 };
