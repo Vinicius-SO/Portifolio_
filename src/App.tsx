@@ -1,6 +1,5 @@
 import { GithubLogo, LinkedinLogo, CaretDoubleDown } from 'phosphor-react';
 import OutlineButton from './components/OutlineButton';
-// import { Button } from './components/ui/button';
 import ilustra from '/Ilustra.svg'
 import Title from '/Title.svg'
 import { ProjectItem } from './components/ProjectItem';
@@ -14,9 +13,9 @@ function App() {
         <h1 className="text-3xl">Home</h1>
 
         <div className=" flex gap-5 ">
-          <a className="text-2xl hover:cursor-pointer hover:text-textColor/50">Projetos</a>
-          <a className="text-2xl hover:cursor-pointer hover:text-textColor/50">Contato</a>
-          <a className="text-2xl hover:cursor-pointer hover:text-textColor/50">Sobre mim</a>
+          <a className="text-2xl hover:cursor-not-allowed hover:text-textColor/50">Projetos</a>
+          <a className="text-2xl hover:cursor-not-allowed hover:text-textColor/50">Contato</a>
+          {/* <a className="text-2xl hover:cursor-pointer hover:text-textColor/50">Sobre mim</a> */}
         </div>
       </header>
 
@@ -29,9 +28,15 @@ function App() {
                 aficionado por programação e tecnologia
               </p>
               <div className='flex flex-row gap-5 ml-10 mt-10'>
-                <OutlineButton > Ver curriculo</OutlineButton>
-                <OutlineButton> <GithubLogo size={32} /></OutlineButton>
-                <OutlineButton> <LinkedinLogo size={32}/></OutlineButton>
+                <a href="./Cv - Vinicius Oliveira.pdf">
+                  <OutlineButton > Ver curriculo</OutlineButton>
+                </a>
+                <a href="https://github.com/Vinicius-SO">
+                  <OutlineButton> <GithubLogo size={32} /></OutlineButton>
+                </a>
+                <a href="https://www.linkedin.com/in/viniciuss-so/">  
+                  <OutlineButton> <LinkedinLogo size={32}/></OutlineButton>
+                </a>
               </div>
             </div>
           </div>
@@ -73,7 +78,7 @@ function App() {
             title='Portifolio de Projetos'
             description='Meu portfólio é uma página web que destaca minhas habilidades e projetos. Aqui, você encontrará informações sobre mim, meus objetivos profissionais e uma seleção de projetos mais recentes nos quais trabalhei. Algumas das tecnologias principais do projeto são React, Tailwind e Figma. O projeto ainda está em andamento, como pode ser visto no site. Existem muitas coisas a serem adicionadas e implementadas, como as páginas de projetos e contatos, além da responsividade para dispositivos móveis.'
             link="https://vinicius-so-portifolio.netlify.app/"
-            />
+            />  
 
           </div>
       </main>
